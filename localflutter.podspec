@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'lltreeLibrary'
+  s.name             = 'localflutter'
   s.version          = '1.0.0'
-  s.summary          = 'test AAAAAAAAA'
+  s.summary          = 'test localflutter'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,39 +21,26 @@ Pod::Spec.new do |s|
 test bbbbbbbbbbb
                        DESC
 
-  s.homepage         = 'https://github.com/lltree/gclTestPod.git'
+  s.homepage         = 'https://github.com/lltree/localflutter.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = 'MIT'
   s.author           = { 'gaochunlei' => 'gaochunlei@58ganji.com' }
-  s.source           = { :git => 'https://github.com/lltree/gclTestPod.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lltree/localflutter.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  #s.source_files = 'lltreeLibrary/Classes/**/*'
+  s.source_files = 'localflutter/flutter_module/ios/Flutter/flutter_assets'
+  s.vendored_frameworks = 'localflutter/flutter_module/ios/Flutter/*.framework'
   s.requires_arc = true
   s.frameworks = 'UIKit'
   # s.resource_bundles = {
-  #   'lltreeLibrary' => ['lltreeLibrary/Assets/*.png']
+  #   'lltreeLibrary' => ['localflutter/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-
- s.subspec 'Classes' do | subClasses |
-      subClasses.source_files = 'lltreeLibrary/Classes/**/*.{h,m,mm,c,cc,cpp}'
-      #ui.public_header_files = 'Pod/Classes/UIKitAddition/**/*.h'
-      #ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
-      #ui.dependency 'PodTestLibrary/CommonTools'
-  end
-
-  s.subspec 'DataModel' do | subDataModel |
-      subDataModel.source_files = 'lltreeLibrary/DataModel/**/*.{h,m,mm,c,cc,cpp}'
-      #ui.public_header_files = 'Pod/Classes/UIKitAddition/**/*.h'
-      #ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
-      #ui.dependency 'PodTestLibrary/CommonTools'
-  end
 
 
 end

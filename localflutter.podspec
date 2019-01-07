@@ -29,9 +29,9 @@ test bbbbbbbbbbb
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'localflutter/flutter_module/ios/Flutter/flutter_assets'
-  s.source_files = 'localflutter/flutter_module/ios/Flutter/*.framework'
+  s.vendored_frameworks = 'flutter_module/ios/Flutter/*.framework'
+  #s.source_files = 'flutter_module/ios/Flutter/flutter_assets'
+  s.resources = 'flutter_module/ios/Flutter/flutter_assets'
   s.requires_arc = true
   s.frameworks = 'UIKit'
   # s.resource_bundles = {

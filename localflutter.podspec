@@ -31,7 +31,7 @@ test bbbbbbbbbbb
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'localflutter/flutter_module/ios/Flutter/flutter_assets'
-  s.vendored_frameworks = 'localflutter/flutter_module/ios/Flutter/*.framework'
+  s.source_files = 'localflutter/flutter_module/ios/Flutter/*.framework'
   s.requires_arc = true
   s.frameworks = 'UIKit'
   # s.resource_bundles = {
